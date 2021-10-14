@@ -4,3 +4,4 @@ feature 'visiting the homepage' do
     expect(page).to have_content "Bookmark Manager"
   end
 end
+
