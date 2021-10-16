@@ -10,4 +10,5 @@ class HelloRack
   end
 
 end
+
 run HelloRack.new
