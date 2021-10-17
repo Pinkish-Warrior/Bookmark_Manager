@@ -14,3 +14,5 @@ gem 'capybara', group: :test
 group :development, :test do
   gem "rubocop", "1.20"
 end
+
+gem "sinatra-flash", "~> 0.3.0"

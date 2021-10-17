@@ -1,0 +1,8 @@
+
+<!-- in views/bookmarks/edit.erb -->
+<form action="/bookmarks/" method="post">
+  <input type="hidden" name="bookmark_id" value="<%= @bookmark.id %> "/>
+  <input type="text" name="url" value="<%= @bookmark.url %>" />
+  <input type="text" name="title" value="<%= @bookmark.title %>" />
+  <input type="submit" value="Submit" />
+</form>

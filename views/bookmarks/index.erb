@@ -11,6 +11,12 @@
         <input type='hidden' name='_method' value='DELETE'/>
         <input type='submit' value="Delete" />
       </form>
+      <form action="/bookmarks/ <%= bookmark.id %>/edit" method="get">
+        <input type="submit" value="Edit" />
+      </form>
     </li>
   <% end %>
 </ul>
+<p> 
+  <%= flash[:notice] %>
+</p>
