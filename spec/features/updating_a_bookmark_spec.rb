@@ -14,7 +14,7 @@ feature 'Updating a bookmark' do
     click_button('Submit')
   
     expect(current_path).to eq '/bookmarks'
-    expect(page).not_to have_link('Makers Academy', href: 'https://www.makersacademy.com')
+    expect(page).not_to have_link('0')
     expect(page).to have_link('Snakers Academy', href: 'https://www.snakersacademy.com')
   end
 end

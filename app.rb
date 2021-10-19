@@ -29,7 +29,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/bookmarks' do
-    # p params
+    p params
     # p "Form data submitted to the /bookmarks route!"
     if params['url'] =~ /\A#{URI::regexp(['http', 'https'])}\z/
       Bookmark.create(url: params[:url], title: params[:title])
@@ -64,7 +64,7 @@ class BookmarkManager < Sinatra::Base
     #  "UPDATE bookmarks SET url = $1, title = $2 WHERE id = $3",
     #  [ params[:url], params[:title], params[:id] ]
     # )
-    redirect '/bookmarks'
+    # redirect '/bookmarks'
   end
 
   run! if app_file == $0

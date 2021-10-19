@@ -34,7 +34,7 @@ describe Bookmark do
       # expect(Bookmark.all).to include 'https://www.example.org'
 
       expect(bookmark).to be_a Bookmark
-      expect(bookmark.id).to eq persisted_data['id']
+      expect(bookmark.id).to eq persisted_data.first['id']
       expect(bookmark.url).to eq 'https://www.example.org'
       expect(bookmark.title).to eq 'Test Bookmark'
     end
